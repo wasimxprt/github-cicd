@@ -14,6 +14,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+permissions:
+  contents: read
+  security-events: write  # Grants write access to the dependency submission API
+
 jobs:
   build:
 
